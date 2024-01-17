@@ -7,19 +7,30 @@ public class PlayerInventory : MonoBehaviour
     public Transform weaponHolder;
 
     public GameObject equippedWeapon;
-    public GameObject kineticWeapon;
-    public GameObject specialWeapon;
-    public GameObject heavyWeapon;
+    public GameObject kinetic;
+    public GameObject special;
+    public GameObject heavy;
 
-    public GameObject[] kinetic = new GameObject[9];
-    public GameObject[] special = new GameObject[9];
-    public GameObject[] heavy = new GameObject[9];
-    public GameObject[] helmet = new GameObject[9];
-    public GameObject[] chestplate = new GameObject[9];
-    public GameObject[] gloves = new GameObject[9];
-    public GameObject[] legs = new GameObject[9];
-    public GameObject[] boots = new GameObject[9];
-    public GameObject[] necklace = new GameObject[9];
+    public GameObject[] kineticInventory = new GameObject[9];
+    public GameObject[] specialInventory = new GameObject[9];
+    public GameObject[] heavyInventory = new GameObject[9];
+    public GameObject[] helmetInventory = new GameObject[9];
+    public GameObject[] chestplateInventory = new GameObject[9];
+    public GameObject[] glovesInventory = new GameObject[9];
+    public GameObject[] legsInventory = new GameObject[9];
+    public GameObject[] bootsInventory = new GameObject[9];
+    public GameObject[] necklaceInventory = new GameObject[9];
+
+    public Item redGun;
+    public Item blueGun;
+    public Item purpleGun;
+
+    private void Start()
+    {
+        PickUp(redGun);
+        PickUp(blueGun);
+        PickUp(purpleGun);
+    }
 
     private void Update()
     {
@@ -39,31 +50,50 @@ public class PlayerInventory : MonoBehaviour
 
     private void Equip(int index)
     {
-        GameObject newWeapon;
+        GameObject newWeapon = null;
+        
         switch (index) {
             case 0:
-                if(equippedWeapon == kineticWeapon) { return; }
-                equippedWeapon = kineticWeapon;
-
+                if(equippedWeapon == kinetic) { return; }
+                equippedWeapon = kinetic;
+                if (weaponHolder.childCount > 0) { Destroy(weaponHolder.GetChild(0).gameObject); }
                 newWeapon = Instantiate(equippedWeapon.GetComponent<Gun>().item.prefab, weaponHolder) as GameObject;
 
                 break;
             case 1:
-                if (equippedWeapon == specialWeapon) { return; }
-                equippedWeapon = specialWeapon;
-
+                if (equippedWeapon == special) { return; }
+                equippedWeapon = special;
+                if (weaponHolder.childCount > 0) { Destroy(weaponHolder.GetChild(0).gameObject); }
                 newWeapon = Instantiate(equippedWeapon.GetComponent<Gun>().item.prefab, weaponHolder) as GameObject;
 
                 break;
             case 2:
-                if (equippedWeapon == heavyWeapon) { return; }
-                equippedWeapon = heavyWeapon;
-
+                if (equippedWeapon == heavy) { return; }
+                equippedWeapon = heavy;
+                if (weaponHolder.childCount > 0) { Destroy(weaponHolder.GetChild(0).gameObject); }
                 newWeapon = Instantiate(equippedWeapon.GetComponent<Gun>().item.prefab, weaponHolder) as GameObject;
 
                 break;
             default:
                 break;
+        }
+    }
+
+    public void PickUp(Item item)
+    {
+        GameObject newItem = item.prefab;
+        newItem.GetComponent<Gun>().itemLevel = Random.Range(1, 50);
+        if(item.itemType == Item.type.Kinetic)
+        {
+            kinetic = newItem;
+        }
+        else if(item.itemType == Item.type.Special)
+        {
+            special = newItem;
+        }
+        else if(item.itemType == Item.type.Heavy)
+        {
+            heavy = newItem;
         }
     }
 }

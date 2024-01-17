@@ -1045,10 +1045,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponHolder: {fileID: 1014399748}
   equippedWeapon: {fileID: 0}
-  kineticWeapon: {fileID: 5456247213726272405, guid: 5449e503f0e527042a7b49c871b6fd1a, type: 3}
-  specialWeapon: {fileID: 5456247213726272405, guid: ef60cd7b4e41c3b4d9e9f597fd66e3ae, type: 3}
-  heavyWeapon: {fileID: 5456247213726272405, guid: 47fd2440f356edc44be4816914800eae, type: 3}
-  kinetic:
+  kinetic: {fileID: 0}
+  special: {fileID: 0}
+  heavy: {fileID: 0}
+  kineticInventory:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1058,7 +1058,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  special:
+  specialInventory:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1068,7 +1068,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  heavy:
+  heavyInventory:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1078,7 +1078,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  helmet:
+  helmetInventory:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1088,7 +1088,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  chestplate:
+  chestplateInventory:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1098,7 +1098,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  gloves:
+  glovesInventory:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1108,7 +1108,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  legs:
+  legsInventory:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1118,7 +1118,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  boots:
+  bootsInventory:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1128,7 +1128,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  necklace:
+  necklaceInventory:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1138,6 +1138,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  redGun: {fileID: 11400000, guid: 65d004e0a976e2449b03b8c9f4737503, type: 2}
+  blueGun: {fileID: 11400000, guid: 8a50eb86f92013442b568c2e6d7bf156, type: 2}
+  purpleGun: {fileID: 11400000, guid: 62ebac822ef515e44b2162127ae52f02, type: 2}
 --- !u!1 &1839880935
 GameObject:
   m_ObjectHideFlags: 0
