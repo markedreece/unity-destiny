@@ -27,23 +27,20 @@ public class PlayerInventory : MonoBehaviour
 
     private void Start()
     {
-        PickUp(redGun);
-        PickUp(redGun);
-        PickUp(blueGun);
-        PickUp(purpleGun);
+
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1) && kinetic != null)
         {
             Equip(0);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha2) && special != null)
         {
             Equip(1);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha3) && heavy != null)
         {
             Equip(2);
         }

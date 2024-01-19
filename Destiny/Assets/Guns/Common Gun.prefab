@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6032191355115491363}
   - component: {fileID: 2355613367528872530}
   m_Layer: 8
-  m_Name: Purple Gun
+  m_Name: Common Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 000ac82b79856e040bcdb39bc7dd85b4, type: 2}
+  - {fileID: 2100000, guid: 962316eb1a6f8b744a2ea57240f7b1dd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97,4 +97,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemLevel: 0
-  item: {fileID: 11400000, guid: 62ebac822ef515e44b2162127ae52f02, type: 2}
+  item: {fileID: 11400000, guid: 65d004e0a976e2449b03b8c9f4737503, type: 2}

@@ -20,6 +20,17 @@ public class Item : ScriptableObject
 
     public type itemType;
 
+    public enum rarity
+    {
+        Common,
+        Uncommon,
+        Rare,
+        Legendary,
+        Exotic
+    };
+
+    public rarity rarityType;
+
     public string itemName;
 
     public GameObject prefab;

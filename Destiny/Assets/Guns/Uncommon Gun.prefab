@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6032191355115491363}
   - component: {fileID: 2355613367528872530}
   m_Layer: 8
-  m_Name: Blue Gun
+  m_Name: Uncommon Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 09aeb3a27e952e94eb3a850a4cd9a868, type: 2}
+  - {fileID: 2100000, guid: 7e980c9a4c1c1e341bc32e0e6c5c46dc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,5 +96,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 493962cd88075544baac2cee89deb0c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemLevel: 0
-  item: {fileID: 11400000, guid: 8a50eb86f92013442b568c2e6d7bf156, type: 2}
+  itemLevel: 43
+  item: {fileID: 11400000, guid: 9b3192751a75eb34d887f3f9596b91eb, type: 2}
