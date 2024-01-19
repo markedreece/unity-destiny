@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14fa43315654edb4595f9290b8505e98, type: 3}
   m_Name: Purple Gun
   m_EditorClassIdentifier: 
-  itemType: 0
+  itemType: 2
   itemName: Purple Gun
   prefab: {fileID: 5456247213726272405, guid: 47fd2440f356edc44be4816914800eae, type: 3}

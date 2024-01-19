@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14fa43315654edb4595f9290b8505e98, type: 3}
   m_Name: Blue Gun
   m_EditorClassIdentifier: 
-  itemType: 0
+  itemType: 1
   itemName: Blue Gun
   prefab: {fileID: 5456247213726272405, guid: ef60cd7b4e41c3b4d9e9f597fd66e3ae, type: 3}

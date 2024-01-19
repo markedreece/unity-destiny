@@ -28,6 +28,7 @@ public class PlayerInventory : MonoBehaviour
     private void Start()
     {
         PickUp(redGun);
+        PickUp(redGun);
         PickUp(blueGun);
         PickUp(purpleGun);
     }
@@ -83,17 +84,39 @@ public class PlayerInventory : MonoBehaviour
     {
         GameObject newItem = item.prefab;
         newItem.GetComponent<Gun>().itemLevel = Random.Range(1, 50);
+
         if(item.itemType == Item.type.Kinetic)
         {
-            kinetic = newItem;
+            if(kinetic == null) { kinetic = newItem; }
+            else
+            {
+                for(int i = 0; i < kineticInventory.Length; i++)
+                {
+                    if(kineticInventory[i] == null) { kineticInventory[i] = newItem; return; }
+                }
+            }
         }
         else if(item.itemType == Item.type.Special)
         {
-            special = newItem;
+            if (special == null) { special = newItem; }
+            else
+            {
+                for (int i = 0; i < specialInventory.Length; i++)
+                {
+                    if (specialInventory[i] == null) { specialInventory[i] = newItem; return; }
+                }
+            }
         }
         else if(item.itemType == Item.type.Heavy)
         {
-            heavy = newItem;
+            if (heavy == null) { heavy = newItem; }
+            else
+            {
+                for (int i = 0; i < heavyInventory.Length; i++)
+                {
+                    if (heavyInventory[i] == null) { heavyInventory[i] = newItem; return; }
+                }
+            }
         }
     }
 }
