@@ -6,11 +6,13 @@ public class PlayerInventory : MonoBehaviour
 {
     public Transform weaponHolder;
 
+    [Header("Hotbar Items")]
     public GameObject equippedWeapon;
     public GameObject kinetic;
     public GameObject special;
     public GameObject heavy;
 
+    [Header("Inventory items")]
     public GameObject[] kineticInventory = new GameObject[9];
     public GameObject[] specialInventory = new GameObject[9];
     public GameObject[] heavyInventory = new GameObject[9];
@@ -21,16 +23,28 @@ public class PlayerInventory : MonoBehaviour
     public GameObject[] bootsInventory = new GameObject[9];
     public GameObject[] necklaceInventory = new GameObject[9];
 
-    public Item redGun;
-    public Item blueGun;
-    public Item purpleGun;
+    [Header("UI Elements")]
+    public GameObject inventoryUI;
+
+    [Header("Gameplay Checks")]
+    public bool isInventoryOpen;
 
     private void Start()
     {
-
+        Init();
     }
 
     private void Update()
+    {
+        GetInput();
+    }
+
+    private void Init()
+    {
+        inventoryUI.SetActive(false);
+    }
+
+    private void GetInput()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1) && kinetic != null)
         {
@@ -43,6 +57,12 @@ public class PlayerInventory : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha3) && heavy != null)
         {
             Equip(2);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            if (!isInventoryOpen) { OpenInventory(); }
+            else { CloseInventory(); }
         }
     }
 
@@ -115,5 +135,17 @@ public class PlayerInventory : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void OpenInventory()
+    {
+        inventoryUI.SetActive(true);
+        isInventoryOpen = true;
+    }
+
+    private void CloseInventory()
+    {
+        inventoryUI.SetActive(false);
+        isInventoryOpen = false;
     }
 }
