@@ -21,7 +21,6 @@ public class ItemInventory : MonoBehaviour
 
     public void UpdateSlots()
     {
-        
-    }
 
+    }
 }

@@ -272,6 +272,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (4)
@@ -390,6 +394,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (4)
@@ -492,6 +500,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (6)
@@ -594,6 +606,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (1)
@@ -696,6 +712,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (7)
@@ -829,6 +849,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (8)
@@ -931,6 +955,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (3)
@@ -1101,6 +1129,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (4)
@@ -1215,6 +1247,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Main Slot
@@ -1387,6 +1423,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (7)
@@ -1489,6 +1529,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (3)
@@ -1607,6 +1651,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot
@@ -1709,6 +1757,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (8)
@@ -1919,7 +1971,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1974433077775140901, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -189
+      value: -32.111465
       objectReference: {fileID: 0}
     - target: {fileID: 1974433077775140901, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1933,6 +1985,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Main Slot
@@ -2142,6 +2198,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (5)
@@ -2346,6 +2406,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (2)
@@ -2509,6 +2573,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (7)
@@ -2710,6 +2778,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (2)
@@ -2990,6 +3062,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (6)
@@ -3092,6 +3168,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (3)
@@ -3194,6 +3274,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (8)
@@ -3337,6 +3421,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (2)
@@ -3523,6 +3611,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (1)
@@ -3750,6 +3842,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (5)
@@ -4052,6 +4148,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (5)
@@ -4568,6 +4668,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   inventoryUI: {fileID: 1223567989}
+  itemUI:
+  - {fileID: 1568452189}
+  - {fileID: 1086144140}
+  - {fileID: 506974394}
   isInventoryOpen: 0
 --- !u!1 &1839880935
 GameObject:
@@ -4703,6 +4807,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot
@@ -4805,6 +4913,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (6)
@@ -4955,6 +5067,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot (1)
@@ -5055,7 +5171,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1974433077775140901, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -117
+      value: -31.963776
       objectReference: {fileID: 0}
     - target: {fileID: 1974433077775140901, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5069,6 +5185,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Main Slot
@@ -5228,6 +5348,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221297935936668598, guid: a5389fd003b46614792db617a0712297, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 1778796510}
     - target: {fileID: 5828655473333446657, guid: a5389fd003b46614792db617a0712297, type: 3}
       propertyPath: m_Name
       value: Slot

@@ -25,6 +25,7 @@ public class PlayerInventory : MonoBehaviour
 
     [Header("UI Elements")]
     public GameObject inventoryUI;
+    public GameObject[] itemUI;
 
     [Header("Gameplay Checks")]
     public bool isInventoryOpen;
@@ -104,36 +105,64 @@ public class PlayerInventory : MonoBehaviour
 
         if(item.itemType == Item.type.Kinetic)
         {
-            if(kinetic == null) { kinetic = newItem; }
+            if(kinetic == null) { kinetic = newItem; itemUI[0].GetComponent<ItemInventory>().mainSlot.GetComponent<SlotScript>().item = kinetic; }
             else
             {
                 for(int i = 0; i < kineticInventory.Length; i++)
                 {
-                    if(kineticInventory[i] == null) { kineticInventory[i] = newItem; return; }
+                    if(kineticInventory[i] == null)
+                    {
+                        kineticInventory[i] = newItem;
+                        foreach(GameObject o in itemUI[0].GetComponent<ItemInventory>().sideSlots)
+                        {
+                            o.GetComponent<SlotScript>().item = newItem;
+                        }
+                        return;
+                    }
                 }
             }
         }
         else if(item.itemType == Item.type.Special)
         {
-            if (special == null) { special = newItem; }
+            if (special == null) { special = newItem; itemUI[1].GetComponent<ItemInventory>().mainSlot.GetComponent<SlotScript>().item = special; }
             else
             {
                 for (int i = 0; i < specialInventory.Length; i++)
                 {
-                    if (specialInventory[i] == null) { specialInventory[i] = newItem; return; }
+                    if (specialInventory[i] == null)
+                    {
+                        specialInventory[i] = newItem;
+                        foreach (GameObject o in itemUI[1].GetComponent<ItemInventory>().sideSlots)
+                        {
+                            o.GetComponent<SlotScript>().item = newItem;
+                        }
+                        return;
+                    }
                 }
             }
         }
         else if(item.itemType == Item.type.Heavy)
         {
-            if (heavy == null) { heavy = newItem; }
+            if (heavy == null) { heavy = newItem; itemUI[2].GetComponent<ItemInventory>().mainSlot.GetComponent<SlotScript>().item = heavy; }
             else
             {
                 for (int i = 0; i < heavyInventory.Length; i++)
                 {
-                    if (heavyInventory[i] == null) { heavyInventory[i] = newItem; return; }
+                    if (heavyInventory[i] == null)
+                    {
+                        heavyInventory[i] = newItem;
+                        foreach (GameObject o in itemUI[2].GetComponent<ItemInventory>().sideSlots)
+                        {
+                            o.GetComponent<SlotScript>().item = newItem;
+                        }
+                        return;
+                    }
                 }
             }
+        }
+        foreach(GameObject o in itemUI)
+        {
+            o.GetComponent<ItemInventory>().UpdateSlots();
         }
     }
 

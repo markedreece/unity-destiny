@@ -34,4 +34,6 @@ public class Item : ScriptableObject
     public string itemName;
 
     public GameObject prefab;
+
+    public Sprite image;
 }
