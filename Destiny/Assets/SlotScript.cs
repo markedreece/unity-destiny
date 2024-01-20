@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class SlotScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public GameObject item;
+
+    public PlayerInventory playerInventory;
+
+    public void SwapTo()
     {
-        
+        if(item.GetComponent<Item>().itemType == Item.type.Kinetic)
+        {
+            GameObject tempItem = playerInventory.kinetic;
+            playerInventory.kinetic = item;
+            item = tempItem;
+        }
     }
 }
