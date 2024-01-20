@@ -160,14 +160,14 @@ public class PlayerInventory : MonoBehaviour
                 }
             }
         }
-        foreach(GameObject o in itemUI)
-        {
-            o.GetComponent<ItemInventory>().UpdateSlots();
-        }
     }
 
     private void OpenInventory()
     {
+        foreach (GameObject o in itemUI)
+        {
+            o.GetComponent<ItemInventory>().UpdateSlots();
+        }
         inventoryUI.SetActive(true);
         isInventoryOpen = true;
     }

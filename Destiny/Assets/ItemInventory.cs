@@ -21,6 +21,14 @@ public class ItemInventory : MonoBehaviour
 
     public void UpdateSlots()
     {
-
+        if(mainSlot != null)
+        {
+        }
+        foreach(GameObject o in sideSlots)
+        {
+            if(o.GetComponent<SlotScript>().item != null)
+            {
+            }
+        }
     }
 }
