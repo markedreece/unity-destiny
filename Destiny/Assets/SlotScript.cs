@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class SlotScript : MonoBehaviour
 {
     public GameObject item;
-    public Sprite image;
 
     public PlayerInventory playerInventory;
 
@@ -22,7 +21,7 @@ public class SlotScript : MonoBehaviour
 
     public void UpdateSlot()
     {
-        if(item == null) { image = null; return; }
-        image = item.GetComponent<Item>().image;
+        if(item == null) { GetComponent<Image>().sprite = null; return; }
+        GetComponent<Image>().sprite = item.GetComponent<Gun>().item.image;
     }
 }

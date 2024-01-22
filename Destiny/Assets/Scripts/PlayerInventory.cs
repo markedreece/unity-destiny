@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
+    public GameObject gm;
     public Transform weaponHolder;
 
     [Header("Hotbar Items")]
@@ -43,6 +44,7 @@ public class PlayerInventory : MonoBehaviour
     private void Init()
     {
         inventoryUI.SetActive(false);
+        gm = GameObject.Find("GameManager");
     }
 
     private void GetInput()
@@ -76,31 +78,33 @@ public class PlayerInventory : MonoBehaviour
                 if(equippedWeapon == kinetic) { return; }
                 equippedWeapon = kinetic;
                 if (weaponHolder.childCount > 0) { Destroy(weaponHolder.GetChild(0).gameObject); }
-                newWeapon = Instantiate(equippedWeapon.GetComponent<Gun>().item.prefab, weaponHolder) as GameObject;
+                newWeapon = Instantiate(kinetic, weaponHolder) as GameObject;
 
                 break;
             case 1:
                 if (equippedWeapon == special) { return; }
                 equippedWeapon = special;
                 if (weaponHolder.childCount > 0) { Destroy(weaponHolder.GetChild(0).gameObject); }
-                newWeapon = Instantiate(equippedWeapon.GetComponent<Gun>().item.prefab, weaponHolder) as GameObject;
+                newWeapon = Instantiate(special, weaponHolder) as GameObject;
 
                 break;
             case 2:
                 if (equippedWeapon == heavy) { return; }
                 equippedWeapon = heavy;
                 if (weaponHolder.childCount > 0) { Destroy(weaponHolder.GetChild(0).gameObject); }
-                newWeapon = Instantiate(equippedWeapon.GetComponent<Gun>().item.prefab, weaponHolder) as GameObject;
+                newWeapon = Instantiate(heavy, weaponHolder) as GameObject;
 
                 break;
             default:
                 break;
         }
+
+        Debug.Log("Weapon Item Level: " + equippedWeapon.GetComponent<Gun>().itemLevel);
     }
 
     public void PickUp(Item item)
     {
-        GameObject newItem = item.prefab;
+        GameObject newItem = Instantiate(item.prefab, gm.transform.Find("Trash")) as GameObject;
         newItem.GetComponent<Gun>().itemLevel = Random.Range(1, 50);
 
         if(item.itemType == Item.type.Kinetic)
@@ -113,10 +117,6 @@ public class PlayerInventory : MonoBehaviour
                     if(kineticInventory[i] == null)
                     {
                         kineticInventory[i] = newItem;
-                        foreach(GameObject o in itemUI[0].GetComponent<ItemInventory>().sideSlots)
-                        {
-                            o.GetComponent<SlotScript>().item = newItem;
-                        }
                         return;
                     }
                 }
@@ -132,10 +132,6 @@ public class PlayerInventory : MonoBehaviour
                     if (specialInventory[i] == null)
                     {
                         specialInventory[i] = newItem;
-                        foreach (GameObject o in itemUI[1].GetComponent<ItemInventory>().sideSlots)
-                        {
-                            o.GetComponent<SlotScript>().item = newItem;
-                        }
                         return;
                     }
                 }
@@ -151,10 +147,6 @@ public class PlayerInventory : MonoBehaviour
                     if (heavyInventory[i] == null)
                     {
                         heavyInventory[i] = newItem;
-                        foreach (GameObject o in itemUI[2].GetComponent<ItemInventory>().sideSlots)
-                        {
-                            o.GetComponent<SlotScript>().item = newItem;
-                        }
                         return;
                     }
                 }

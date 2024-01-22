@@ -16,4 +16,4 @@ MonoBehaviour:
   rarityType: 0
   itemName: Common Gun
   prefab: {fileID: 5456247213726272405, guid: 5449e503f0e527042a7b49c871b6fd1a, type: 3}
-  image: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  image: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}

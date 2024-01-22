@@ -23,11 +23,13 @@ public class ItemInventory : MonoBehaviour
     {
         if(mainSlot != null)
         {
+
         }
         foreach(GameObject o in sideSlots)
         {
             if(o.GetComponent<SlotScript>().item != null)
             {
+                o.GetComponent<SlotScript>().UpdateSlot();
             }
         }
     }
